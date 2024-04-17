@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <style>
+        .active{
+            background-color: #a92f41;
+        }
+
+        .box{
+            background-color: black;
+            color: white;
+            width: 100%;
+            padding: 30px;
+        }
+.boxes{
+    display: flex;
+    gap: 30px;
+}
+   
+    </style>
+<div class="boxes">
+    <div class="box" id="bxone" onclick="active('bxone')">1</div>
+    <div class="box" id="bxtwo" onclick="active('bxtwo')">2</div>
+    <div class="box" id="bxthree" onclick="active('bxthree')">3</div>
+</div>
+
+ 
+
+
+<script>
+
+    function active(myid){
+  
+const selected =  document.getElementById(myid)
+const boxone = document.getElementById('bxone')
+const boxtwo = document.getElementById('bxtwo')
+const boxthree = document.getElementById('bxthree')
+
+boxone.style.background = 'black'
+boxtwo.style.background = 'black'
+boxthree.style.background = 'black'
+selected.style.background = "#a92f41"
+selected.style.color = "pink"
+    }
+</script>
+
+</body>
+</html>

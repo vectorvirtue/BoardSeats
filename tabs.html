@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <style>
+    .tabcontent{
+        padding: 60px;
+        background-color: azure;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .activetab{
+        border-bottom: 3px solid #a92F41;
+    }
+  </style>  
+<div style="display: flex; gap: 30px;">
+    <div id="tabone" class="activetab" onclick="showtabone()">Tab one</div>
+    <div id="tabtwo" onclick="showtabtwo()">Tab two</div>
+</div>
+
+
+
+
+<div id="tabcontentone" class="tabcontent " style="display: flex;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam officia, pariatur minus accusantium cumque, a odio temporibus maxime atque, ullam quod rem odit. Consectetur iure unde veritatis et animi minima.</div>
+<div id="tabcontenttwo" class="tabcontent" style="display: none;">cpntent two</div>
+
+
+<script>
+
+    const tabone = document.getElementById('tabone')
+    const tabtwo = document.getElementById('tabtwo')
+    const tabcontentone = document.getElementById('tabcontentone')
+    const tabcontenttwo = document.getElementById('tabcontenttwo')
+function showtabone(){
+// tabone.classList.add('activetab')
+// tabtwo.classList.remove('activetab')
+tabcontentone.style.display = 'flex'
+tabcontenttwo.style.display = 'none'
+}
+
+
+function showtabtwo(){
+//     tabone.classList.remove('activetab')
+// tabtwo.classList.add('activetab')
+tabcontentone.style.display = 'none'
+tabcontenttwo.style.display = 'flex'
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="stylesheet" href="style..css">
+    <script type="" src="code.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="one">
+            <div class="logo">
+                <img src="Group 1587.png" alt="">
+            </div>
+            <div class="under">
+                <div class="line">
+                    
+                </div>
+            </div>
+            <div class="flex" id="flex" onclick="active('flex')" >
+                <div class="icon">
+                    <ion-icon name="grid-outline" size="large"></ion-icon>
+                </div>
+                <div class="names">Dashboard</div>
+            </div>
+    
+            <div class="flex" id="flexone" onclick="active('flexone')">
+                <div class="icon">
+                    <ion-icon name="search-outline" size="large"></ion-icon>
+                </div>
+                <div class="names">Find A Role</div>
+            </div>
+            <div class="flex" id="flextwo" onclick="active('flextwo')" >
+                <div class="icon">
+                    <ion-icon name="reader-outline" size="large"></ion-icon>
+                </div>
+                <div class="names">Applications</div>
+            </div>
+            <div class="flex" id="flexthree" onclick="active('flexthree')">
+                <div class="icon">
+                    <ion-icon name="layers-outline" size="large"></ion-icon>
+                </div>
+                <div class="names">Services</div>
+            </div>
+            <div class="flex" id="flexfour" onclick="active('flexfour')">
+                <div class="icon">
+                    <ion-icon name="chatbubble-ellipses-outline" size="large"></ion-icon>
+                </div>
+                <div class="names">Inbox</div>
+            </div>
+            <div class="flex" id="flexfive" onclick="active('flexfive')">
+                <div class="icon">
+                    <ion-icon name="person-outline" size="large"></ion-icon>
+                </div>
+                <div class="names">Profile</div>
+            </div>
+            <div class="flex" id="flexsix" onclick="active('flexsix')"  style="background-color: #a92f41; color: white;">
+                <div class="icon">
+                    <ion-icon name="settings-outline" size="large"></ion-icon>
+                </div>
+                <div class="names">Settings</div>
+            </div>
+            <div class="flex" id="flexseven" onclick="active('flexseven')">
+                <div class="icon">
+                    <ion-icon name="enter-outline" size="large"></ion-icon>
+                </div>
+                <div class="names">LogOut</div>
+            </div>
+     </div>
+     <div class="su">
+        <div class="end">
+            <div class="im">
+                <div class="image">
+                    <ion-icon name="notifications-outline" size="large"></ion-icon>
+                </div>
+               </div>
+            <div class="column">
+                <div class="title">D. Kargaev</div>
+            <div class="com">Profile Completeness</div>
+            </div>
+           <div class="img"> <img src="Rectangle.png" alt=""></div>
+            <img src="more-horizontal.png" alt="">
+        </div>
+        <h1>Account Settings </h1>
+        <div class="content">
+            <h3>Subscription</h3>
+            <div class="grp">
+                <div class="bx"><ion-icon name="lock-open-outline" size="large"></ion-icon></div>
+                <div class="tag">
+                    <div class="current">Current Subscription</div>
+                    <div class="free">Free Trial</div>
+                </div>
+                <div class="tag">
+                    <div class="current">Price</div>
+                    <div class="fr">Payment Required</div>
+                </div>
+                <div class="tag">
+                    <div class="current">Expiry Date</div>
+                    <div class="fr">Your plan expires on October 20, 2021</div>
+                </div>
+                <div class="upgrade">
+                    <button>Upgrade Plan</button>
+                </div>
+            </div>
+           
+        </div>
+        <div class="content">
+            <h3>Email Address</h3>
+            <div class="email">
+                Your email address is akinloluwaa@gmail.com <span><a href="">Change email</a></span>
+            </div>
+        </div>
+        <div class="content">
+            <h3>Notifications</h3>
+          <div class="fj">
+           <div class="span">
+            <input type="checkbox" name="" id=""> <span>I would like to sign up to receive job related alerts and notifications. If this box is not checked, please note that that you will still receive important emails about your onboarding and applications</span>
+           </div>
+          <div class="span">
+            <input type="checkbox" name="" id=""> <span>Yes, I would like to share my profile with potential employers</span>
+          </div>
+          <div class="span">
+            <input type="checkbox" name="" id=""> <span>Yes, I would like to share my profile with potential employers</span>
+          </div>
+          </div>
+        </div>
+        <div class="content">
+            <h3>Password Settings</h3>
+            <div class="email">
+                Manage access to your account <span><a href="">Change Password</a></span>
+            </div>
+        </div>
+        <div class="content">
+            <h3>Deactivate Account</h3>
+            <div class="d">Do you want to deactivate your account? By deactivating your account you will loose all the content associated with it</div>
+            <a href="">Deactivate Account</a>
+        </div>
+    </div>
+    </div>
+    <script>
+             const sen = document.getElementById('flexone')
+    sen.addEventListener("click", function() {
+            window.location.href = 'role.html';
+        });
+        const sn = document.getElementById('flex')
+    sn.addEventListener("click", function() {
+            window.location.href = 'index.html';
+        });
+        const s = document.getElementById('flextwo')
+    s.addEventListener("click", function() {
+            window.location.href = 'application.html';
+        });
+      
+    </script>
+</body>
+</html>

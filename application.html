@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Applications</title>
+    <link rel="stylesheet" href="style..css">
+    <script type="" src="code.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="one">
+            <div class="logo">
+                <img src="Group 1587.png" alt="">
+            </div>
+            <div class="under">
+                <div class="line">
+                    
+                </div>
+            </div>
+            <div class="flex" id="flex" onclick="active('flex')" >
+                <div class="icon">
+                    <ion-icon name="grid-outline" size="large"></ion-icon>
+                </div>
+                <div class="names">Dashboard</div>
+            </div>
+    
+            <div class="flex" id="flexone" onclick="active('flexone')">
+                <div class="icon">
+                    <ion-icon name="search-outline" size="large"></ion-icon>
+                </div>
+                <div class="names">Find A Role</div>
+            </div>
+            <div class="flex" id="flextwo" onclick="active('flextwo')" style="background-color: #a92f41; color: white;">
+                <div class="icon">
+                    <ion-icon name="reader-outline" size="large"></ion-icon>
+                </div>
+                <div class="names">Applications</div>
+            </div>
+            <div class="flex" id="flexthree" onclick="active('flexthree')">
+                <div class="icon">
+                    <ion-icon name="layers-outline" size="large"></ion-icon>
+                </div>
+                <div class="names">Services</div>
+            </div>
+            <div class="flex" id="flexfour" onclick="active('flexfour')">
+                <div class="icon">
+                    <ion-icon name="chatbubble-ellipses-outline" size="large"></ion-icon>
+                </div>
+                <div class="names">Inbox</div>
+            </div>
+            <div class="flex" id="flexfive" onclick="active('flexfive')">
+                <div class="icon">
+                    <ion-icon name="person-outline" size="large"></ion-icon>
+                </div>
+                <div class="names">Profile</div>
+            </div>
+            <div class="flex" id="flexsix" onclick="active('flexsix')">
+                <div class="icon">
+                    <ion-icon name="settings-outline" size="large"></ion-icon>
+                </div>
+                <div class="names">Settings</div>
+            </div>
+            <div class="flex" id="flexseven" onclick="active('flexseven')">
+                <div class="icon">
+                    <ion-icon name="enter-outline" size="large"></ion-icon>
+                </div>
+                <div class="names">LogOut</div>
+            </div>
+           
+        </div>
+        <div class="two">
+            <div class="end">
+                <div class="im">
+                    <div class="image">
+                        <ion-icon name="notifications-outline" size="large"></ion-icon>
+                    </div>
+                   </div>
+                <div class="column">
+                    <div class="title">D. Kargaev</div>
+                <div class="com">Profile Completeness</div>
+                </div>
+               <div class="img"> <img src="Rectangle.png" alt=""></div>
+                <img src="more-horizontal.png" alt="">
+            </div>
+         <div class="t">
+            <div class="save">
+                <div class="r" id="one" onclick="select('one')" style="color: #a92f41;">Saved Roles</div>
+               
+                    <div class="stripe" id="two" onclick="select('two')" style="background-color: #a92f41;" >
+    
+                    </div>
+           
+              </div>
+            <div class="save">
+                <div class="r" id="three" onclick="select('three')">Applied Roles</div>
+           
+                    <div class="stripe" id="four" onclick="select('four')">
+    
+                    </div>
+                
+              </div>
+         </div>
+           <div class="BG">
+            <input type="text" placeholder="Find A Role" id="searchInput">
+            <div class="search">
+             <ion-icon name="search-outline"></ion-icon >
+            </div>
+            <nav>
+             <div class="a">Role Match <span><div class="circle"><ion-icon name="chevron-down-outline"></ion-icon></div></span></div>
+             <div class="a">Industry <span><div class="circle"><ion-icon name="chevron-down-outline"></ion-icon></div></span></div>
+             <div class="a">Date Posted <span><div class="circle"><ion-icon name="chevron-down-outline"></ion-icon></div></span></div>
+             <div class="a">Board Type <span><div class="circle"><ion-icon name="chevron-down-outline"></ion-icon></div></span></div>
+             <div class="a">Country <span><div class="circle"><ion-icon name="chevron-down-outline"></ion-icon></div></span></div>
+             <div class="a">City<span><div class="circle"><ion-icon name="chevron-down-outline"></ion-icon></div></span></div>
+            </nav>
+             </div>
+             <div id="saved">
+
+             </div>  
+             <div id="appliedRolesContainer"></div>      
+
+        <script>
+                         const sen = document.getElementById('flexone')
+    sen.addEventListener("click", function() {
+            window.location.href = 'role.html';
+        });     const s = document.getElementById('flexsix')
+    s.addEventListener("click", function() {
+            window.location.href = 'settings.html';
+        });
+      
+        const sn = document.getElementById('flex')
+    sn.addEventListener("click", function() {
+            window.location.href = 'index.html';
+        });
+      
+              const role = [
+            
+            {    id : 2349803349837,
+                image: 'Vector (12).png',
+                        Services : 'Financial Services',
+                        Role: 'Risk Consulting Director',
+                        job_description: 'We are looking for an experienced tax prepare to join our company. You’ll work closely with our clients and calculate their taxes including returns, liabilities, deductions, We are looking for an experienced tax prepare to experienced .....................',
+   
+  
+            },
+            {
+                id : 3933984803309,
+                image: 'Vector (12).png',
+                        Services : 'Financial Services',
+                        Role: 'Risk Consulting Director',
+                        job_description: 'We are looking for an experienced tax prepare to join our company. You’ll work closely with our clients and calculate their taxes including returns, liabilities, deductions, We are looking for an experienced tax prepare to experienced .....................',
+   
+  
+            }
+            ,
+            {
+                id : 6789022736536,
+                image: 'Vector (12).png',
+                        Services : 'Financial Services',
+                        Role: 'Risk Consulting Director',
+                        job_description: 'We are looking for an experienced tax prepare to join our company. You’ll work closely with our clients and calculate their taxes including returns, liabilities, deductions, We are looking for an experienced tax prepare to experienced .....................',
+   
+  
+            },
+            {
+                id : 4467588277938,
+                image: 'Vector (12).png',
+                        Services : 'Financial Services',
+                        Role: 'Risk Consulting Director',
+                        job_description: 'We are looking for an experienced tax prepare to join our company. You’ll work closely with our clients and calculate their taxes including returns, liabilities, deductions, We are looking for an experienced tax prepare to experienced .....................',
+   
+  
+            },
+            {
+                id: 9888226290229,
+                image: 'Vector (12).png',
+                        Services : 'Financial Services',
+                        Role: 'Risk Consulting Director',
+                        job_description: 'We are looking for an experienced tax prepare to join our company. You’ll work closely with our clients and calculate their taxes including returns, liabilities, deductions, We are looking for an experienced tax prepare to experienced .....................',
+   
+  
+            },
+            {
+                id: 6773737389272,
+                image: 'Vector (12).png',
+                        Services : 'Financial Services',
+                        Role: 'Risk Consulting Director',
+                        job_description: 'We are looking for an experienced tax prepare to join our company. You’ll work closely with our clients and calculate their taxes including returns, liabilities, deductions, We are looking for an experienced tax prepare to experienced .....................',
+   
+  
+            },
+            {
+                id : 5689273028583,
+                image: 'Vector (12).png',
+                        Services : 'Financial Services',
+                        Role: 'Risk Consulting Director',
+                        job_description: 'We are looking for an experienced tax prepare to join our company. You’ll work closely with our clients and calculate their taxes including returns, liabilities, deductions, We are looking for an experienced tax prepare to experienced .....................',
+   
+  
+            },
+            {
+                id : 762839284928,
+                image: 'Vector (12).png',
+                        Services : 'Financial Services',
+                        Role: 'Risk Consulting Director',
+                        job_description: 'We are looking for an experienced tax prepare to join our company. You’ll work closely with our clients and calculate their taxes including returns, liabilities, deductions, We are looking for an experienced tax prepare to experienced .....................',
+   
+  
+            }
+        ];
+      
+      
+            function select(id){
+                const selected = document.getElementById(id)
+                const one = document.getElementById('one');
+    const two = document.getElementById('two');
+    const three = document.getElementById('three');
+    const four = document.getElementById('four');
+
+    // Reset all to default colors
+    one.style.color = 'black';
+    two.style.backgroundColor = '';
+    three.style.color = 'black';
+    four.style.backgroundColor = '';
+
+    // Set selected to red
+    selected.style.color = 'rgba(169, 31, 47, 1)';
+    let stripe;
+
+if (id === 'one') { //learn about ternary operators //if one is clicked the stripe element is being set to that background color
+    stripe = document.getElementById('two');
+    document.getElementById('saved').style.display = 'flex';
+        document.getElementById('appliedRolesContainer').style.display = 'none';
+} else {
+    stripe = document.getElementById('four');
+    document.getElementById('saved').style.display = 'none';
+        document.getElementById('appliedRolesContainer').style.display = 'flex';
+}
+
+stripe.style.backgroundColor = 'rgba(169, 31, 47, 1)';
+
+}
+let myapplications = [];
+
+const savedRoles = localStorage.getItem('Saved_Roles');
+
+if (savedRoles) {
+    myapplications = JSON.parse(savedRoles);
+} 
+
+
+// const mapdata = myapplications.map(function(info){
+//     `
+//       <div class="roles" >
+//         <div class="roleone">
+//           <img src="Vector (12).png" alt="">
+//           <div class="f">${info?.jobservice}</div>
+//           <div class="risk">${info?.jobtitle}</div>
+//           <div class="desc">${info?.jobdescription}</div>
+//           <div class="components">
+//             <div class="check"><ion-icon name="checkmark-outline"></ion-icon></div>
+//             <div class="r">This role matches your profile</div>
+//           </div>
+//           <div class="space">
+//             <div class="mark"><ion-icon name="bookmark-outline"></ion-icon></div>
+//             <div class="Save">Save Role</div>
+//             <div class="time">2 mins ago</div>
+//           </div>
+//         </div>
+//       </div>`;
+//   });
+//   const id = document.getElementById('saved');
+//   const move = mapdata.join("");
+//   id.innerHTML = move;
+
+function save() {
+
+    const id = document.getElementById('saved');
+   
+
+    myapplications.forEach(function(info) {
+        id.innerHTML += `
+            <div class="roles">
+                <div class="roleone">
+                    <img src="Vector (12).png" alt="">
+                    <div class="f">${info?.jobservice}</div>
+                    <div class="risk">${info?.jobtitle}</div>
+                    <div class="desc">${info?.jobdescription}</div>
+                    <div class="components">
+                        <div class="check"><ion-icon name="checkmark-outline"></ion-icon></div>
+                        <div class="r">This role matches your profile</div>
+                    </div>
+                    <div class="space">
+                        <div class="mark"><ion-icon name="bookmark-outline"></ion-icon></div>
+                        <div class="Save">Save Role</div>
+                        <div class="time">2 mins ago</div>
+                    </div>
+                </div>
+            </div>
+        `;
+    });
+}
+
+save();
+let applications = [];
+   
+   const saveapply = localStorage.getItem('Applied_Roles');
+if (saveapply) {
+    applications = JSON.parse(saveapply);
+}
+function applied(){
+    const id = document.getElementById('appliedRolesContainer');
+   
+
+   applications.forEach(function(info) {
+       id.innerHTML += `
+           <div class="roles">
+               <div class="roleone">
+                   <img src="Vector (12).png" alt="">
+                   <div class="f">${info?.jobservice}</div>
+                   <div class="risk">${info?.jobtitle}</div>
+                   <div class="desc">${info?.jobdescription}</div>
+                   <div class="components">
+                       <div class="check"><ion-icon name="checkmark-outline"></ion-icon></div>
+                       <div class="r">This role matches your profile</div>
+                   </div>
+                   <div class="space">
+                       <div class="mark"><ion-icon name="bookmark-outline"></ion-icon></div>
+                       <div class="Save">Save Role</div>
+                       <div class="time">2 mins ago</div>
+                   </div>
+               </div>
+           </div>
+       `;
+   });
+}applied()
+
+  
+ 
+</script>
